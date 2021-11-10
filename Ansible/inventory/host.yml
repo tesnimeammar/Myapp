@@ -5,4 +5,5 @@ localhost
 
 [Server:vars]
 ansible_python_interpreter= /usr/bin/python
-ansi_user= tesnime
+ansible_user= tesnime
+ansible_become_pass=tesnime
