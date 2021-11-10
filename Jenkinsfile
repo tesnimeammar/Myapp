@@ -14,6 +14,13 @@ pipeline {
             }
         }
         
+	stage('Install') {
+             steps{
+                script{
+                    sh "sudo npm install"
+                }
+            }
+        }
 
 	stage ('Build') {
 	
@@ -29,7 +36,13 @@ pipeline {
 
 
 
-
+	stage('ng Build') {
+             steps{
+                script{
+                    sh "sudo ng build"
+                }
+            }
+        }
 
 
 	}
