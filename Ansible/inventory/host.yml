@@ -1,4 +1,4 @@
-local ansible_connection=local
+
 
 [Server]
 localhost
@@ -6,4 +6,4 @@ localhost
 [Server:vars]
 ansible_python_interpreter= /usr/bin/python
 ansible_user= tesnime
-ansible_become_pass=tesnime
+ansible_become_pass= tesnime
