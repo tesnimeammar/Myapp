@@ -2,7 +2,7 @@
 # tasks file for docker
 - name: create image docker
   docker_image:
-    name: tesnimeammar/Myapp
+    name: Myapp
     build:
      path: /var/lib/jenkins/workspace/Angular
      pull: no
@@ -13,6 +13,8 @@
   docker_container:
     name: Myapp_container
     image: tesnimeammar/Myapp:latest
+    name: Myapp_container
+    image: Myapp:latest
     state: started
     recreate: true
     ports:
